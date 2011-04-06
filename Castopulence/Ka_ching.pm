@@ -9,6 +9,8 @@ use Exporter;
 
 use constant {
     DB_FILE_NAME => 'db',
+    DEFAULT_PASS => 'ka_ching',
+    DEFAULT_USER => 'ka_ching',
     DIR_NAME => '.ka_ching'
 };
 
@@ -32,7 +34,7 @@ sub new
 
 sub get_ka_ching_defaults
 {
-    return { user => 'ka_ching', pass => 'ka_ching' };
+    return { user => DEFAULT_USER, pass => DEFAULT_PASS };
 }
 
 sub get_ka_ching_dir

@@ -24,9 +24,9 @@ desc - unique single word string to describe it (<=25 chars).
 = Debt =
 
 id - auto incrementing primary key.
-party_id - foreign key to the party owed.
-amount - total amount borrowed.
-when - approx. date/time borrowed.
+party_id - foreign key to the party owed/owing.
+amount - total amount borrowed/lent.
+when - approx. date/time borrowed/lent.
 
 = Recurring Transaction =
 

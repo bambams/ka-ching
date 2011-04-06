@@ -1,0 +1,12 @@
+# vim: fileencoding=utf-8 filetype=text textwidth=0 wrap
+#
+# Rough brainstorming on entities for the data schema.
+#
+
+* account: Money storage (e.g., bank account, PayPal account, PSN wallet, etc.).
+* category: A category to tag transactions (e.g., transportation, home, dog, whatever).
+* debt: Borrowed/owed money.
+* party: A payee or payer.
+* recurring_transaction: Criteria for an automatically occurring transaction.
+* transaction: An exchange of money; gain or loss.
+

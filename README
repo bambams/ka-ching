@@ -1,0 +1,23 @@
+The name ka-ching isn't set in stone yet. I just needed /something/ to
+name the directory and repository. I'm not completely satisfied with it so
+I expect I'll change it if I can think of something clever or more
+sensible.
+
+I want a CLI interface to manage a budget and figured that I would write
+one. I've only just begun thinking about it though so I'm not really clear
+of where it's going to go.
+
+I'm beginning with Perl because it's a fast language to "hack" away in and
+I rather enjoy it. I'm sure it will suffice and will probably make many
+tasks easier, but the language isn't set in stone so I may end up using
+more or porting completely to a different language if I feel inclined to
+do so.
+
+I intend for the CLI to be similar to Git in that there will be many
+programs with specific purposes (adding expense items, adding payments,
+adding incomes, etc.) and the end result is hopefully very modular and
+clean.
+
+Assume GPLv2+, though I haven't gotten around to adding licensing yet
+(since I only just mkdir'd).
+

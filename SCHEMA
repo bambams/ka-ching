@@ -9,4 +9,39 @@
 * party: A payee or payer.
 * recurring_transaction: Criteria for an automatically occurring transaction.
 * transaction: An exchange of money; gain or loss.
+* transaction_type: A type of transaction...?
+
+= Account =
+
+id - auto incrementing primary key.
+desc - unique single line string to describe it (<=50 chars).
+
+= Category =
+
+id - auto incrementing primary key.
+desc - unique single word string to describe it (<=25 chars).
+
+= Debt =
+
+id - auto incrementing primary key.
+party_id - foreign key to the party owed.
+amount - total amount borrowed.
+when - approx. date/time borrowed.
+
+= Recurring Transaction =
+
+id - auto incrementing primary key.
+desc - unique string to describe the transaction.
+crontime - [minute] [hour] [day of month] [month] [day of week].
+amount - The amount to be added (negative for an expense). {{{ It might make sense for the UI to interpret unsigned numbers as negative and +num as positive. }}}
+account_id - Foreign key to account to add to.
+party_id - Foreign key of participating party (to or from).
+
+= Transaction =
+
+id - auto incrementing primary key.
+log - large string expecting a 50 char or less line, a blank line, and any other (reasonable) length of text.
+amount - total amount of transaction.
+when - approx. date/time of transaction.
+type_id - Type of transaction (purchase, utility, loan, ... not sure yet).
 

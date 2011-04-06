@@ -19,4 +19,6 @@
   - Figure out how the data entities interact and how best to use them.
   - Figure out how to maintain sufficient precision in both Perl and in
     the SQLite database.
+* Figure out configuration options.
+  - Example: Negative format:  -number  vs.  (number)
 

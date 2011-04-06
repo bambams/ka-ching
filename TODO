@@ -1,0 +1,22 @@
+# After rushing into some implementation details I've decided that if I
+# want any chance of writing something useful that I had better stop and
+# think before I code. :P My plan is to use a SQLite database and so I
+# think my very first order of business is going to be the schema. Once
+# I have that figured out I should have a better idea of how the data
+# will be stored and what the UIs will need to be to interact with the
+# data. Then I can fill in the blanks. These are just some rough plans to
+# help keep me motivated. xD
+
+* Design schema.
+  - Identify data entities.
+  - Identify relationships between them.
+  - Research budgets and account sheets online for inspiration...
+* Design UI.
+  - Determine the necessary operations and which commands they will
+    correspond to.
+  - Determine which options each command should support.
+* Implement the guts of the program. The logic and data handling.
+  - Figure out how the data entities interact and how best to use them.
+  - Figure out how to maintain sufficient precision in both Perl and in
+    the SQLite database.
+

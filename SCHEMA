@@ -44,6 +44,7 @@ id - auto incrementing primary key.
 log - large string expecting a 50 char or less line, a blank line, and any other (reasonable) length of text.
 amount - total amount of transaction.
 when - approx. date/time of transaction.
+account_id - Foreign key to account to add to.
 party_id - Foreign key of participating party (to or from).
 type_id - Type of transaction (purchase, utility, loan, ... not sure yet).
 

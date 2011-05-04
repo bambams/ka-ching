@@ -1,4 +1,4 @@
-# vim: fileencoding=utf-8 filetype=text textwidth=0 wrap
+# vim: fileencoding=utf-8 filetype=text nobomb textwidth=0 wrap
 #
 # This file contains some mock UI usage ... Just to help get an idea for
 # how the software should work... This isn't necessarily how the software
@@ -10,12 +10,12 @@
 #
 
 ka-ching-account add ibs-chequing                                               # Create a new "account".
-ka-ching-account set-balance 1000.00                                            # Set account balance as of right now.
+ka-ching-account set-balance ibs-chequing 1000.00                               # Set account balance as of right now.
 ka-ching-category add food                                                      # Add a transaction category to track food purchases.
-ka-ching-transaction ibs-chequing 8.41 -Cfood -m"Double-combo at Wendy's"       # Record a food transaction for $8.41 and log it as a meal at Wendy's [now].
-ka-ching-category add paycheque                                                 # Add a transaction category to track paycheques.
-ka-ching-transaction ibs-chequing +1234.57 -Cpaycheque -D'01012011'             # Record a paycheque transaction for +1234.57
+ka-ching-transaction ibs-chequing 8.41 -Cfood -m"Double-combo at Wendy's" today # Record a food transaction for $8.41 and log it as a meal at Wendy's [today].
+ka-ching-category add pay-cheque                                                # Add a transaction category to track pay-cheques.
+ka-ching-transaction ibs-chequing +1234.57 -Cpay-cheque -D'20110101'            # Record a pay-cheque transaction for +1234.57
 ka-ching-account balance ibs-chequing                                           # Check the balance on ibs-chequing account.
-ka-ching-budget expense gasoline 40/2w                                          # Add a recurring expense to your budget for gasoline of $40 every 2 weeks.
+ka-ching-budget expense "Gasoline" 40/2w                                        # Add a recurring expense to your budget for gasoline of $40 every 2 weeks.
 ka-ching-budget                                                                 # Show budget.
 
